@@ -4,71 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Heads and Tails</title>
-    <style>
-      .main {
-        width: 50%;
-        height: 80%;
-        background-color: rgb(85, 178, 253);
-        margin-left: 25%;
-        margin-top: 10%;
-        border-radius: 10px;
-        padding: 20px;
-      }
-      #list {
-        margin-left: 10%;
-        margin-top: 5px;
-        padding: 10px;
-        width: 40%;
-        text-align: center;
-        border-radius: 5px;
-        border-style: none;
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-          sans-serif;
-        font-size: 20px;
-      }
-      .label {
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-          sans-serif;
-        font-size: 20px;
-        color: #fff;
-        margin-left: 10%;
-      }
-      .result {
-        width: 50%;
-        height: 10%;
-        background-color: #fff;
-        margin-top: 30%;
-        margin-left: 10%;
-        padding: 10px;
-        display: none;
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-          sans-serif;
-        font-size: 15px;
-      }
-      .button {
-        margin: 10%;
-      }
-      input[type="button"]:hover,
-      .list:hover {
-        cursor: pointer;
-      }
-
-      input[type="button"] {
-        width: auto;
-        background-color: #fff;
-        border-style: none;
-        border-radius: 5px;
-        font-size: 15px;
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-          sans-serif;
-        float: left;
-        padding: 8px;
-        margin: 10px;
-      }
-      #playAgain {
-        display: none;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="main">
@@ -80,7 +16,7 @@
         <option id="option" name="option">Tails</option>
       </select>
       <div class="button">
-        <input type="button" onclick="game()" value="Play" />
+        <input id="playButton" type="button" onclick="game()" value="Play" />
         <input
           id="playAgain"
           type="button"
